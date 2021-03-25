@@ -1,0 +1,30 @@
+div.parent { 
+    background-color: lightgray;
+
+}
+
+
+div.clild {
+  background-color: lightgreen;
+  height: 100px;
+  padding: 1em;
+  margin: 1em;
+}
+
+
+
+
+
+div.age_panel {
+  height: 60px;
+  width: 200px;
+  background-color: lime;
+  padding: .5em;
+  margin: .5em;
+
+}
+
+input[type=button] {
+  height:130px;
+  margin: .4em;
+}

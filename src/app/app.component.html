@@ -1,0 +1,38 @@
+<div class="parent">
+
+    <h1>Evento detectado: <span style="color:darkred">{{eventText}}</span></h1>
+
+    <div class="child">
+
+        <input type="button"
+               value="Esto es un botón que no hace nada"
+               (click)="onClickClild()"
+               (swipe)="onSwipe()"
+               (tap)="onTap()"
+               (pan)="onPan()"
+            (press)="onPress()"/>
+
+
+        <p>NOTA: Los elementos de edad no tiene la directiva creada: Directamente al hacer click en el label se activan
+            (se podría mejorar poninendo la directiva)</p>
+        <div class="age_panel">
+            <label for="age1">Menos de 18</label>
+            <input type="radio" name="age" id="age1" value="Menos de 18" (click)="onOptionSelected()" (swipe)="onOptionSelected()" (tap)="onOptionSelected()"/>
+        </div>
+
+        <div class="age_panel">
+            <label for="age2">Más de 18 años</label>
+            <input type="radio" name="age" id="age2"  value="Entre 18 y 30" (click)="onOptionSelected()"/>
+        </div>
+
+        <input type="button" bms-kiosk-toucheable (click)="onKioskClick()"  (kioskTouched)="onKioskClick()" value="HAZ ALGO SOBRE MI SI TENGO LA DIRECTIVA: bms-kiosk-toucheable"/>
+        <input type="button" (click)="onKioskClick()" value="HAZ ALGO SOBRE MI NO TENGO LA DIRECTIVA: bms-kiosk-toucheable"/>
+
+    </div>
+
+
+
+
+</div>
+
+<input type="button" (click)="resetUI()" value="Borrar UI"/>
